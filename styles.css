@@ -1,0 +1,533 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial|Qwigley);
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-color:#EEF2FB;
+/*background-image:url(kuvat/bg.png);*/
+color: #000000;
+}
+body, table {
+    font: 12px Verdana,serif;
+}
+#varauslista {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: -moz-use-text-color #808080 #808080 -moz-use-text-color;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+}
+#varauslista td {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #808080 -moz-use-text-color -moz-use-text-color #808080;
+    border-style: solid none none solid;
+    border-width: 1px medium medium 1px;
+    font-size: 10px;
+    min-width: 46px;
+    padding: 2px;
+    text-align: center;
+}
+#tayte {
+    float: left;
+    height: 100%;
+    width: 32px;
+}
+#otsake {
+    width: 100%;
+}
+#varauslista tr {
+    height: 26px;
+}
+#lukin {
+    width: 32px;
+}
+#logd1, #logd2, #logd3 {
+    text-align: left;
+    width: 400px;
+}
+#eka, #eka td {
+    background-color: #6180C0;
+    background-image: -moz-linear-gradient(center bottom , #FCE245 0%, #FFF6A3 100%);
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+#eka {
+    border: 1px solid #808080;
+}
+.var {
+    background-color: #B8C7E7;
+    color: #7391D0;
+    font-size: 8px;
+}
+#l1 {
+    display: none;
+}
+#l2 {
+    display: none;
+}
+#l3 {
+    display: none;
+}
+#l4 {
+    display: none;
+}
+select {
+    min-width: 150px;
+}
+#tulokset {
+    min-height: 100px;
+}
+.num {
+    color: #E1D1B5;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 1px #000000;
+}
+.free {
+    color: #499809;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.loader {
+    margin-bottom: -3px;
+}
+#ok1, #ok2, #ok3 {
+    visibility: hidden;
+}
+h1, h2, .mcl, .readyfor, .readyfor2 {
+    font-family: 'Questrial',sans-serif;
+    font-size: 40px;
+}
+.mcl, .mcl a {
+    color: #000000;
+}
+h2, .mcl, .readyfor, .readyfor2 {
+    font-size: 20px;
+}
+#ylos {
+    color: #000;
+    font: 14px Georgia;
+    margin-top: -24px;
+}
+#navi a, #navi div a {
+    color: #000000;
+    text-decoration: none;
+}
+#navi {
+    background-color: #F0F0F0;
+    border: 1px solid #C0C0C0;
+    padding: 0 8px;
+}
+#navi div {
+    background-image: url("kuvat/ohjain.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+    min-width: 50px;
+    padding: 2px 12px 2px 2px;
+}
+#navi div:hover {
+    background-color: #E1F2FF;
+}
+.hint {
+    background-image: url("kuvat/hint.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 10px;
+    margin-top: 4px;
+    min-height: 16px;
+    padding: 4px;
+    width: 450px;
+}
+.signs {
+    -moz-transition: all 500ms ease 0s;
+    background-image: url("kuvat/beta.png");
+    background-position: 0 0;
+    height: 120px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 150px;
+}
+.signs:hover {
+    opacity: 0.5;
+}
+select {
+    -moz-transition: all 500ms ease 0s;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+input[type="text"], input[type="password"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #C0C0C0;
+    border-style: none none dashed;
+    border-width: 0 0 1px;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border-bottom: 1px dashed #000000;
+}
+select:hover, input[type="submit"], input[type="button"],  input[type="reset"], button, .napsu, .vri {
+    background: url(kuvat/free.png) repeat scroll 0 0 transparent;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 4px 4px 4px 4px;
+}
+input[type="submit"], input[type="button"], input[type="reset"], button {
+    background: url(kuvat/free2.png) repeat scroll 0 0 transparent;
+padding:3px;
+padding-left:10px;
+padding-right:10px;
+border-bottom: 2px solid rgba(0,0,0,0.25);
+}
+input[type="submit"]:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, button:disabled {
+    background-image: none;
+	background-color:#E5E5E5;
+	padding-bottom:4px;
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.vri {
+    padding: 4px;
+}
+.kiinnita{
+border-top:1px solid #E0E0E0;
+padding:5px;
+padding-top:10px;
+background-image:url(kuvat/kiinnita.png);
+background-repeat:repeat-x;
+background-position:0 0;
+}
+.napsu {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 90px;
+}
+.noava {
+    background: url(kuvat/taken.png) repeat scroll 0 0 #E52525;
+	background-color:#E52525;
+    color: #FFFFFF;
+}
+.old {
+	cursor:no-drop;
+    background: url(kuvat/old.png) repeat scroll 0 0 #E52525;
+	background-color:#E0E0E0;
+    color: #808080;
+}
+.noava span {
+    vertical-align: -2px;
+}
+.noava{
+cursor:help;
+}
+.noava div {
+    -moz-transition: all 250ms ease 0s;
+    color: #F67E7E;
+    cursor: help;
+    display: inline-block;
+    float: right;
+    font-size: 9px;
+    font-weight: bold;
+    height: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+.noava div:hover {
+    background-color: #CC2222;
+    color: #FFFFFF;
+}
+#nobold {
+    font-weight: normal;
+}
+#paiva {
+    background-image: url("kuvat/pero.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #A7B3BF;
+    font: 16px Georgia;
+    width: 90px;
+}
+#vuosi {
+    font-size: 28px;
+}
+#isoboxi {
+    background-color: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    display: none;
+    height: 50%;
+    left: 25%;
+    padding: 4px;
+    position: fixed;
+    top: 25%;
+    width: 50%;
+}
+.iso{
+font-size:22px;
+}
+#kau td{
+border-right:1px dashed #999999;
+}
+.black_overlay, #pimennys {
+    background-color: #AE6D38;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+	background-image:url(kuvat/ovbg.png);
+}
+.white_content {
+	background-image:url(kuvat/card.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	border:1px solid #808080;
+    background-color: #F0F0F0;
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 35%;
+    left: -30%;
+    overflow: auto;
+    padding: 5px;
+    position: fixed;
+    top: 30%;
+    width: 35%;
+    z-index: 1002;
+}
+#katkoviiva{
+height:0;
+width:100%;
+border-top:1px dashed #999999;
+}
+#kappaleet {
+    max-height: 300px;
+    overflow: auto;
+}
+.rapido {
+    min-height: 20px;
+    padding: 4px;
+    width: 700px;
+}
+.sprites {
+    background-image: url("kuvat/sprites.png");
+    background-position: 0 0;
+}
+#nonetwork {
+    background-position: 0 0;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+#pimennys, #pimennys h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+#pinni {
+    -moz-animation-duration: 1500ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: slidein;
+    background-position: 0 -120px;
+    display: inline-block;
+    height: 48px;
+    width: 38px;
+}
+#vl {
+    height: 150px;
+    overflow: auto;
+    width: 200px;
+}
+a img, img a {
+    border: 0 none;
+}
+a {
+    color: #4682B4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#lukkari {
+    width: 100%;
+	opacity:0.37;
+}
+.bar {
+    background-image: url("kuvat/bars.png");
+    background-repeat: repeat-x;
+    box-shadow: 0 0 3px #000000;
+    color: #FFFFFF;
+    display: none;
+    font-weight: bold;
+    height: 32px;
+    left: 0;
+    padding-left: 10px;
+    position: fixed;
+    text-shadow: 0 0 3px #000000;
+    top: 0;
+    width: 100%;
+}
+.bar span {
+    vertical-align: -8px;
+}
+.bar1 {
+    background-position: 0 0;
+}
+.bar2 {
+    background-position: 0 -32px;
+}
+.bar3 {
+    background-position: 0 -64px;
+}
+.ikoni {
+    margin-bottom: -8px;
+}
+.readyfor, .readyfor2 {
+    background-color: #31F16B;
+    background-image: url("kuvat/readyfor.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    height: 64px;
+    text-shadow: 0 0 2px #000000;
+    width: 100%;
+}
+.readyfor2 {
+    background-color: #F13137;
+    background-image: url("kuvat/readyfor2.png");
+}
+.ikon32 {
+    margin-bottom: -8px;
+}
+.ikon16{
+margin-bottom:-4px;
+}
+.osa1 {
+    border-radius: 4px 4px 0 0;
+}
+.osa2 {
+    border-radius: 0 0 4px 4px;
+    border-top: 0 none;
+}
+#logd2, #logd3 {
+    display: none;
+}
+#loginarea {
+    background-image:url(kuvat/loginbar.png);
+	background-position:0 0;
+    color: #000000;
+    width: 100%;
+	height:46px;
+	box-shadow:0 0 4px rgba(0,0,0,0.25);
+}
+#loginarea td {
+    text-align: left;
+}
+#loginarea a{
+color:#232323;
+}
+#theuser{
+font-weight:bold;
+}
+#infobox{
+position:absolute;
+width:271px;
+height:128px;
+padding-top:29px;
+padding-left:14px;
+padding-right:14px;
+background-image:url(kuvat/infobox.png);
+display:none;
+top:0;
+left:0;
+}
+#boxv{
+font-weight:bold;
+}
+.sivuhuom{
+font-size:9px;
+color:#A0A0A0;
+}
+#tayte1{
+width:100%;
+height:12px;
+}
+#vinfo{
+display:none;
+}
+#vload{
+color:#C0C0C0;
+font-weight:bold;
+}
+#sulje{
+cursor:pointer;
+cursor:hand;
+}
+#sulje:hover{
+opacity:0.5;
+}
+#wait{
+height:auto;
+width:100%;
+top:0;
+left:0;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+position:fixed;
+background-color:#F7EF9E;
+padding:4px;
+}
+.leima{
+float:right;
+margin-top:-128px;
+margin-left:-32px;
+}
+.menu{
+height:32px;
+width:160px;
+background-image:url(kuvat/menul.png);
+background-position:0 0;
+margin-bottom:2px;
+}
+.mi{
+margin-bottom:-12px;
+}
+#sigc{
+font-size:28px;
+font-family: 'Qwigley', cursive;
+border-bottom:1px solid #999999;
+}
+.close{
+padding-left:2px;
+padding-right:2px;
+cursor:pointer;
+cursor:hand;
+}
+.close:hover{
+background-color:#990000;
+}
+#hload{
+display:none;
+}
