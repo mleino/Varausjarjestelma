@@ -234,7 +234,7 @@ Valitse varauksen pituus<br /><br />
   <span id="boxv">Varaa luokka</span><br /><br />
   Haluatko varmasti varata luokan itsellesi valittuna ajankohtana?
   <div id="tayte1"></div>
-  <input type="button" value="Kyllä" onclick="savebook();" id="saveyes" /> <input type="button" value="En" onclick="$('#infobox').fadeOut('fast');" id="saveno" /> <img src="kuvat/hload.png" alt="Ladataan" id="hload" /><br />
+  <input type="button" value="Kyllä" id="saveyes" /> <input type="button" value="En" onclick="$('#infobox').fadeOut('fast');" id="saveno" /> <img src="kuvat/hload.png" alt="Ladataan" id="hload" /><br />
   </form>
   </div>
 </body>

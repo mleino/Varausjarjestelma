@@ -1,11 +1,11 @@
 ﻿function showlogin(){
-    document.getElementById('logd1').style.display='none';
-    document.getElementById('logd2').style.display='block';
-    document.getElementById('logd3').style.display='none';}
+    $('#logd1').hide();
+    $('#logd2').show();
+    $('#logd3').hide()}
 function lopeta(){
-    document.getElementById('logd1').style.display='block';
-    document.getElementById('logd2').style.display='none';
-    document.getElementById('logd3').style.display='none';
+    $('#logd1').show();
+    $('#logd2').hide();
+    $('#logd3').hide();
     $.ajax({
 	    type: "POST",
 		url: "logout.php",
@@ -56,10 +56,7 @@ function lkr(lmw,lmc){
     document.location='?week=' + lmw + '&class=' + lmc;
 }
 function nonetwork(){
-    document.getElementById('pimennys').style.display='block';
-}
-function vrdat(var1,var2,var3,var4,var5,var6){
-    document.getElementById('vrdat').innerHTML="<h3><img src=\"kuvat/reika.png\" /> Tietoja varauksesta</h3><table cellpadding=\"3\" cellspacing=\"0\"><tr><td><b>Varaaja</b></td><td>" + var1 + "</td></tr><tr><td><b>Luokka</b></td><td>" + var2 + "</td></tr><tr><td><b>Päivämäärä</b></td><td>" + var3 + "</td></tr><tr><td><b>Tunti</b></td><td>" + var4 + "</td></tr></table><img src=\"kuvat/stamp.png\" alt=\"Approved\" class=\"leima\" /><br /><br /><a href=\"javascript:dialogi('varausboxi2',false)\">[X] Sulje</a>";
+    $('#pimennys').show();
 }
 
 function vbox(bd,bl,siemen,bp){
@@ -90,6 +87,9 @@ $('#infobox').animate({"top":($('#b'+siemen).offset().top+4) + 'px'},"fast");
 $(document).ready(function() {
 $("#wait").hide();
 $("#lukkari").animate({"opacity":"1"},"slow");
+$("#saveyes").click(function(){
+// savebook():n toiminnallisuus tähän...
+});
 });
 
 function savebook(){
